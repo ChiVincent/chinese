@@ -1,0 +1,19 @@
+{
+    "name": "chivincent/chinese",
+    "description": "Translate between Traditional Chinese and Simplified Chinese",
+    "type": "library",
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vincent Chi",
+            "email": "song374561@chivincent.net"
+        }
+    ],
+    "minimum-stability": "stable"
+}
