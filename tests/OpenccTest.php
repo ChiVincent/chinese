@@ -17,8 +17,16 @@ class OpenccTest extends TestCase
     public function testOpenccWithConfigure()
     {
         $configures = [
-            's2t.json', 't2s.json', 's2tw.json', 'tw2s.json', 's2hk.json', 'hk2s.json', 's2twp.json', 'tw2sp.json',
-            't2tw.json', 't2hk.json',
+            Opencc::SIMPLIFIED_TO_TRADITIONAL,
+            Opencc::TRADITIONAL_TO_SIMPLIFIED,
+            Opencc::SIMPLIFIED_TO_TW_TRADITIONAL,
+            Opencc::TW_TRADITIONAL_TO_SIMPLIFIED,
+            Opencc::SIMPLIFIED_TO_HK_TRADITIONAL,
+            Opencc::HK_TRADITIONAL_TO_SIMPLIFIED,
+            Opencc::SIMPLIFIED_TO_TW_IDIOM_TRADITIONAL,
+            Opencc::TW_IDIOM_TRADITIONAL_TO_SIMPLIFIED,
+            Opencc::OPENCC_TRADITIONAL_TO_TW_TRADITIONAL,
+            Opencc::OPENCC_TRADITIONAL_TO_HK_TRADITIONAL,
         ];
 
         foreach ($configures as $configure) {
